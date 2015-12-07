@@ -36,7 +36,7 @@ routes = {
 			if (err) {
 				throw err;
 			}
-			res.setHeader("Content-Type", "text/html");
+			res.setHeader("Content-Type", "text/css");
 			res.write(data);
 			res.end();
 		})
