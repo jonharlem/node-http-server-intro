@@ -18,13 +18,3 @@ var server = http.createServer(handleRequest);
 server.listen(PORT, function() {
 	console.log("I'm listening on port " + PORT)
 });
-
-// fs.readFile('./index.html', function(err, data) {
-// 	if (err) {
-// 		throw err;
-// 	}
-
-// 	res.setHeader("Content-Type", "text/html");
-// 	res.statusCode = 200;
-// 	res.write(data);
-// 	res.end();

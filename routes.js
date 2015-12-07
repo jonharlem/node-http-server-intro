@@ -20,6 +20,16 @@ routes = {
 			res.write(data);
 			res.end();
 		})
+	},
+	'/style.css': function(req, res) {
+		fs.readFile('./style.css', function(err, data) {
+			if (err) {
+				throw err;
+			}
+			res.setHeader("Content-Type", "text/html");
+			res.write(data);
+			res.end();
+		})
 	}
 }
 
